@@ -1,0 +1,31 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: zhitongblog.Unterm
+PackageVersion: 0.71.17
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+Commands:
+- unterm-cli
+ReleaseDate: 2026-10-01
+AppsAndFeaturesEntries:
+- DisplayName: Unterm
+  Publisher: Alex
+  UpgradeCode: '{2B17738E-D6E7-44BB-9B55-1D6AF31404A2}'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/zhitongblog/unterm/releases/download/v0.71.17/Unterm-0.71.17-x64.msi
+  InstallerSha256: 62E3FE99EBEA33FA2B913283ACE7E644F56DD2EE34ABC19ADE55E13F44B6471A
+  ProductCode: '{593BA95B-4374-40BD-9EC0-5C32809FC345}'
+- Architecture: arm64
+  InstallerUrl: https://github.com/zhitongblog/unterm/releases/download/v0.71.17/Unterm-0.71.17-arm64.msi
+  InstallerSha256: B85AE6607F53BED25CD28EA76CD80DB721AB415EE97C909A7ABE231485883CDF
+  ProductCode: '{1589D72A-06C8-4AA9-9924-791331D1AB53}'
+ManifestType: installer
+ManifestVersion: 1.12.0
